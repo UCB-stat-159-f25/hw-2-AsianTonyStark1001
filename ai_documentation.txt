@@ -1,0 +1,11 @@
+The required file to run the Binder to get the binder link that directly links to the ipynb? 
+The output:
+Run this inside your repo:
+mkdir binder
+Then create a file called postBuild inside it:
+nano binder/postBuild
+Paste this content:
+#!/usr/bin/env bash
+set -e
+# Make sure the ligo kernel is available when Binder starts
+python -m ipykernel install --user --name ligo --display-name "Python ligo"
