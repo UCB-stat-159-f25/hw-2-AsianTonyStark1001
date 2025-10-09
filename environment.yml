@@ -10,7 +10,3 @@ dependencies:
   - decorator=5.1
   - ipykernel 6.29
   - jupyterlab=4.4
-  - pip
-  - pip:
-    - .
-
